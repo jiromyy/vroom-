@@ -1,0 +1,209 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  }
+  
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1eeeea8;
+  position: absolute;
+  }
+
+
+.sidebar {
+  position: fixed;
+  left: 0px;
+  width: 260px;
+  height: 98%;
+  margin: 10px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  background: #00bfa6;
+}
+
+.sidebar header {
+  border-top-left-radius: 20px;
+  border-bottom: 1px solid white;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 0px;
+  background-color: #FFBD35;
+  user-select: none;
+}
+
+.sidebar ul{
+  margin-top: 20px;
+  list-style: none;
+}
+
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 50px;
+  font-size: 20px;
+  color: white;
+  padding-left: 20px;
+  box-sizing: border-box;
+  transition: .4s ease;
+}
+
+.logo{
+  width: 50%;      
+}
+
+.out {
+  position: relative;
+  width: 150px;
+  height: 49px;
+  border: none;
+  outline: none;
+  border-radius: 48px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #20dbc2;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.5s;
+  left: 50px;
+  top: 250px;
+}
+
+li {
+  margin: 0px 20px 0px 20px;
+}
+
+ul li:hover a{ 
+  background: #20dbc2;
+  border-radius: 10px;    
+}
+
+ul .active a{
+  background: white;
+  border-radius: 10px;
+  color: #07ac96;
+}
+
+.sidebar ul a i {
+  margin-right: 16px;
+}
+
+.heading {
+  position: absolute;
+  background: #FFBD35;
+  left: 275px;
+  top: 10px;
+  width:  1250px;
+  height: 65px;
+  margin-right: 10px;
+  border-top-right-radius: 20px;
+}
+
+.content {
+  position: relative;
+  border-bottom-right-radius: 20px;
+  left: 275px;
+  height: 664px;
+  margin-bottom: 10px;
+  width:  1250px;
+  top: 77px;
+  background: white;
+}
+
+.input-field {
+  max-width: 350px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  margin-left: 15px;
+  margin-top: 10px;
+
+}
+
+.input-field input {
+  background-color: #eeeeee;
+  width: 210px;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  right: 0;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+  padding-left: 15px;
+  right: 0;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+}
+
+.radio {
+  width: 300px;
+  height: 40px;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-right: 50px;
+}
+
+.radio input {
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.add {
+  max-width: 600px;
+}
+
+.add input {
+  width: 600px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  transition: transform 0.3s ease-out
+}
+      
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+      
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+      
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
